@@ -15,10 +15,14 @@ const routes = [
     component: About,
   },
   {
-    path: "/events/:id", 
+    path: "/events/:id",
     name: "EventDetails",
     props: true,
     component: EventDetails,
+  },
+  {
+    path: "/:catchAll(.*)",
+    component: EventList,
   },
 ];
 
